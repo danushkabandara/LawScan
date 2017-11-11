@@ -9,15 +9,15 @@ spent on each client and bill them accordingly. They can clock in and out to dif
 Main Components 
 ----------------
 
-[app/Controller]
+### `app/Controller`
 (contains controller logic)
-[app/Model] 
+### `app/Mode`
 (DB entities are contained within)
-[app/View/Pages]
+### `app/View/Pages`
 (Display logic. The ctp files format and display the data )
-[app/webroot/css] 
+### `app/webroot/css`
 (Styles) 
-[app/webroot/js]
+### `app/webroot/js`
 (Javascript)
-[app/webroot/img]
+###`app/webroot/img`
 (images)
