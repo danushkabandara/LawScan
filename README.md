@@ -19,5 +19,5 @@ Main Components
 (Styles) 
 ### `app/webroot/js`
 (Javascript)
-###`app/webroot/img`
+### `app/webroot/img`
 (images)
