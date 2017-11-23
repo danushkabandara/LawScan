@@ -61,10 +61,6 @@ class HomeController extends AppController {
         $this->set('workOrdersTechLastName',$workOrdersTechLastName);
 
 
-        //$openScans = $this->Scan->find('all', array('conditions'=>array('AND'=>array('Scan.technician_id'=>$this->Auth->user('username'),'OR'=>array('end_time'=>'', 'end_time'=>'0000-00-00 00:00:00')))));
-
-        //$this->set('openScans', $openScans);
-
 
         $openScans = $this->Scan->find('all', array('conditions'=>array('AND'=>array('Scan.technician_id'=>$this->Auth->user('username'),'OR'=>array('end_time'=>'', 'end_time'=>'0000-00-00 00:00:00')))));
         $scanInTechs = array();
