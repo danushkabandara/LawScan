@@ -49,13 +49,11 @@ class HomeController extends AppController {
             }
             $percentageArray[$i] =$j;
             $hoursTakenArray[$i] = $hoursTaken;
-            //$hoursEstimatedArray[$i]=$hoursEstimated;
             $i++;
         }
         $this->Set('technicianArray', $technicianArray);
         $this->Set('percentageArray', $percentageArray);
         $this->Set('hoursTakenArray', $hoursTakenArray);
-        //$this->Set('hoursEstimatedArray', $hoursEstimatedArray);
         $this->set('workOrdersTechId',$workOrdersTechId);
         $this->set('workOrdersTechName',$workOrdersTechName);
         $this->set('workOrdersTechLastName',$workOrdersTechLastName);
