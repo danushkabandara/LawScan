@@ -26,8 +26,7 @@ class DownloadDataController extends AppController{
             $month2 = (string)$date2[0];
             $day2= (string)$date2[1];
             $year2 = (string)$date2[2];
-        //    $technician = $this->Technician->find('first',array('conditions'=> array( "Technician.id"=>$this->params['url']['building'])));
-
+      
             $fieldNameArray=array('vin', 'order_no', 'description', 'estimated_hours','start_time', 'completion_time','completed_hours');
 
             $readings = $this->WorkOrder->find('all',
@@ -37,8 +36,8 @@ class DownloadDataController extends AppController{
                     'WorkOrder.completion_time <='  => $year2."-".$month2."-".$day2." 00:00:00",
                 ),
                     'order'=>array('WorkOrder.completion_time'=>'DESC')));
-$result=array(0);
-$count =0;
+			$result=array(0);
+			$count =0;
             foreach ($readings as $reading)
             {
                     if($reading['Technician']['0']['id']==$this->params['url']['building'])
